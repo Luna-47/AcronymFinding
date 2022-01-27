@@ -1,24 +1,50 @@
-const list={
-  'www':['World Wide Web'],
-  'abc':['Attanasoff-Berry Computer','American Broadcasting Company','Automatic Brightness Control','Active Body Control'],
-  'ram':['Random Access Memory'],
-  'rom':['Read Only Memomy'],
-  'bas':['Business Activity Statement','Bachelor of Applied Studies','Behavorial Analysis Science'],
-  'bit':['binary digit','Bachelor of Information Technology','Baggage Identification Tag'],
-  'url':['Uniform Resource Locator'],
-  'tcp':['Transmission Control Protocol'],
-  'ups':['Uninterruptible Power Supply']
-}
 
-function showresult(){
-  var search=document.getElementById('search');
-  console.log(search.value)
-  var result=document.getElementById('result');
-  result.innerHTML=""
+document.addEventListener('DOMContentLoaded',()=>{
+  const btn=document.querySelector('.buttons');
+  for(var i=0; i<26; i++){
+    var alphabet=document.createElement('button');
+    alphabet.classList.add('btn');
+    alphabet.textContent=((i+10).toString(36)).toUpperCase();
+    alphabet.style.position=i*10+'px';
+    alphabet.setAttribute('value',((i+10).toString(36)).toUpperCase());
+    btn.appendChild(alphabet);
+  }
 
-  for (var i=0; i<list[search.value.toLowerCase()].length; i++){
-    const li=document.createElement("li");
-    li.textContent=list[search.value][i];
-    result.appendChild(li);
+  document.querySelectorAll('.btn').forEach((button)=>{
+    button.onclick=()=>{
+      var letter=button.getAttribute('value').toLowerCase();
+      Object.keys(list).forEach(key=>{
+        if(key.startsWith(letter)){
+          display(key);
+        }
+      })
+    }
+  })
+
+  document.getElementById('button').onclick=()=>{
+    var search=document.getElementById('search');
+    console.log(search.value)
+    var result=document.getElementById('result');
+    result.innerHTML=""
+
+    for (var i=0; i<list[search.value.toLowerCase()].length; i++){
+      const li=document.createElement("li");
+      li.textContent=list[search.value][i];
+      result.appendChild(li);
+  }
+  }
+})
+
+function display(key){
+    var result=document.getElementById('result');
+    result.innerHTML=""
+
+    for (var i=0; i<list[key].length; i++){
+      const li=document.createElement("li");
+      li.textContent=list[key][i];
+      result.appendChild(li);
   }
 }
+
+
+
