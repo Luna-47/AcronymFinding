@@ -1,6 +1,7 @@
 body {
     padding: 0;
     margin: 0;
+    color:white;
     height: 100vh;
     width: 100%;
     background: #07051a;
@@ -12,7 +13,7 @@ body {
     height:100vh;
     align-items: center;
 }
-form{
+forms{
     position: absolute;
     left: 50%;
     top:55%;
@@ -40,7 +41,7 @@ input{
     line-height: 30px;
     outline: 0;
     border: 0;
-    display: none;
+    /* display: none; */
     font-size: 1em;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color:#07051a;
@@ -63,19 +64,19 @@ input{
     transition: all 1s;
 }
 
-form:hover,
-form:valid{
+forms:hover,
+forms:valid{
     width: 500px;
     cursor: pointer;
 }
 
-form:hover input,
+/* form:hover input,
 form:valid input{
     display: block;
-}
+} */
 
-form:hover .fa,
-form:valid .fa{
+forms:hover .fa,
+forms:valid .fa{
     background: #07051a;
     color: white;
 }
@@ -83,7 +84,7 @@ form:valid .fa{
 
 a {
   text-decoration: none;  
-  display: none;
+  /* display: none; */
   position: absolute;
   top: 70px;
   bottom:0;
@@ -95,7 +96,7 @@ a {
   width: 100%;
 }
 
-form:valid a {
+forms:valid a {
   display: block;
 }
 
@@ -120,22 +121,19 @@ form:valid a {
 }
 
 #result{
-    display:block;
-    background-color:white;
+
     position: absolute;
     top: 60%;
     left:40%;
-    width:20%;
-    border-radius:15px;
-}
-
-#result:active{
-    display:block;
+    width:15%;
 }
 
 #result li{
+    background-color:white;
+    border-radius:15px;
     display:block;
-    padding:10px;
+    padding:7px 20px;
     color:#07051a;
     font-size:1em;
+    margin:5px;
 }
