@@ -1,4 +1,3 @@
-
 document.addEventListener('DOMContentLoaded',()=>{
   const btn=document.querySelector('.buttons');
   for(var i=0; i<26; i++){
@@ -21,17 +20,12 @@ document.addEventListener('DOMContentLoaded',()=>{
     }
   })
 
+document.querySelectorAll('.searchResult').forEach((result)=>{
+    console.log(result);})
+
   document.getElementById('button').onclick=()=>{
     var search=document.getElementById('search');
-    console.log(search.value)
-    var result=document.getElementById('result');
-    result.innerHTML=""
-
-    for (var i=0; i<list[search.value.toLowerCase()].length; i++){
-      const li=document.createElement("li");
-      li.textContent=list[search.value][i];
-      result.appendChild(li);
-  }
+    display(search.value.toLowerCase());
   }
 })
 
@@ -41,10 +35,10 @@ function display(key){
 
     for (var i=0; i<list[key].length; i++){
       const li=document.createElement("li");
-      li.textContent=list[key][i];
+      li.classList.add('searchResult');
+      li.innerHTML=list[key][i];
       result.appendChild(li);
   }
 }
-
 
 

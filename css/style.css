@@ -76,7 +76,6 @@ forms:valid .fa{
     color: white;
 }
 
-
 a {
   text-decoration: none;  
   position: absolute;
@@ -115,11 +114,11 @@ forms:valid a {
 }
 
 #result{
-
     position: absolute;
     top: 60%;
     left:40%;
     width:15%;
+    display:inline;
 }
 
 #result li{
@@ -150,9 +149,40 @@ forms:valid a {
     height:30px;
     padding:5px;
     margin:2px;
+    font-weight:500;
 }
 
 .btn:hover{
     background-color: white;
     color:#07051a;
 }
+
+#result li:hover{
+    box-shadow: 2px 2px 5px 0  #ffffff, 2px 2px 10px 0  #ffffff;
+    opacity: 90%;
+}
+
+@media screen and (min-width: 400px) {
+    #result{
+        position: absolute;
+        top: 60%;
+        left:15%;
+        width:60%;
+        display:inline;
+    }
+    forms:hover,
+    forms:valid{
+    width: 400px;
+    cursor: pointer;
+}
+  }
+
+  @media screen and (min-width:800px){
+    #result{
+        position: absolute;
+        top: 60%;
+        left:30%;
+        width:37%;
+        display:inline;
+    }
+  }
