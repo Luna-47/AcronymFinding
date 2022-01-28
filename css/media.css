@@ -13,6 +13,14 @@ forms{
   position: absolute;
   top:30%;
 }
+forms:hover,
+forms:valid{
+    width: 90%;
+    cursor: pointer;
+}
+.navBtn{
+  font-size: 15px;
+}
 }
 
 @media screen and (min-width: 400px) {
