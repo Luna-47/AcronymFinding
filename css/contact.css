@@ -1,0 +1,104 @@
+.mainContact{
+    position: absolute;
+    margin:7% 20%;
+    padding:20px;
+    width:60%;
+    height:80%;
+    align-items: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.heading{
+    width:100%;
+    text-align: center;
+    font-size: 50px;
+    color:rgb(123, 251, 255);
+}
+
+.details{
+    font-size: 27px;
+    background-color: #161527;
+    border-radius: 20px;
+    color:white;
+    padding:15px 55px;
+    height:65%;
+    text-align: justify;
+}
+
+.container{
+    width:100%;
+    height:100%;
+    position: relative;
+    align-items: center;
+}
+
+fieldset {
+    border:none;
+	margin: 0 0 10px;
+	min-width: 100%;
+	padding: 0;
+	width: 100%;
+}
+
+#name{
+    position: absolute;
+    top:15%;
+    width:95%;
+    font-size: 20px;
+}
+
+#number{
+    position: absolute;
+    top:27%;
+    width:95%;
+    font-size: 20px;
+
+}
+
+#mail{
+    position: absolute;
+    top:39%;
+    width:95%;
+    font-size: 20px;
+}
+
+#contact textarea {
+	height:100px;
+    position: absolute;
+    background-color: #161527;
+    border:2px solid white;
+    border-radius: 10px;
+    bottom:22%;
+	width:98%;
+    font-size:15px;
+    padding: 5px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#contact button[type="submit"] {
+    position: absolute;
+    bottom:8%;
+	cursor:pointer;
+	border:2px solid white;
+    border-radius: 15px;
+	background:#161527;
+	color:#FFF;
+	margin:0 0 5px;
+	padding:10px 25px;
+	font-size:20px;
+    text-align: center;
+}
+
+#contact button[type="submit"]:hover {
+	background:white;
+    border: 3px solid #161527;
+    color:#161527;
+	transition:background-color 0.3s ease-in-out;
+}
+
+#contact button[type="submit"]:active { box-shadow:inset 0 1px 3px rgba(0, 0, 0, 0.5); }
+
+#contact input:focus, #contact textarea:focus {
+	outline:0;
+	border:1px solid #999;
+}

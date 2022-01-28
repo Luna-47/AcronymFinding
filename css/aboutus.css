@@ -1,0 +1,28 @@
+.mainAboutus{
+    position: absolute;
+    margin:7% 20%;
+    padding:20px;
+    width:60%;
+    align-items: center;
+}
+
+.heading{
+    width:100%;
+    text-align: center;
+    font-size: 50px;
+    color:rgb(123, 251, 255);
+}
+
+b{
+    color:rgb(123, 251, 255);
+}
+
+.details{
+    font-size: 27px;
+    background-color: #161527;
+    border-radius: 20px;
+    padding:5px 80px;
+    text-align: justify;
+    height:500px;
+    overflow-y: scroll;
+}
