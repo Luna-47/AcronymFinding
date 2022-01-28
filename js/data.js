@@ -15,7 +15,3 @@ const list={
     'tcp':['Transmission Control Protocol'],
     'ups':['Uninterruptible Power Supply']
   }
-
-//   const listed={
-//       'World Wide Web':'www aayo'
-//   }

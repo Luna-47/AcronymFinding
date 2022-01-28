@@ -1,0 +1,26 @@
+@media screen and (min-width: 400px) {
+    #result{
+        position: absolute;
+        top: 60%;
+        left:15%;
+        width:60%;
+        display:inline;
+    }
+
+    forms:hover,
+    forms:valid{
+    width: 400px;
+    cursor: pointer;
+    }
+
+  }
+
+  @media screen and (min-width:800px){
+    #result{
+        position: absolute;
+        top: 60%;
+        left:30%;
+        width:37%;
+        display:inline;
+    }
+  }

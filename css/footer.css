@@ -1,0 +1,42 @@
+footer{
+    position:absolute;
+    color:white;
+    top:85%;
+    width:93%;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 25px;
+    font-weight:200;
+    margin: 0px auto;
+    text-align:justify;
+    padding: 20px; 
+}
+
+a{
+    text-decoration: none;
+}
+
+#fot2{
+    left:12%;
+}
+
+#fot3{
+    left:35%;
+}
+
+#fot4{
+    left:55%;
+}
+
+#fot5{
+    left:80%;
+}
+
+.fa-lg{
+    text-decoration: none;
+    color:white;
+}
+
+.fa-lg:hover{
+    background-color: white;
+    color:#07051a;
+}

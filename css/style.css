@@ -117,8 +117,11 @@ forms:valid a {
     position: absolute;
     top: 60%;
     left:40%;
+    height:25%;
     width:15%;
     display:inline;
+    overflow-y: scroll;
+    background-color: #07051a;
 }
 
 #result li{
@@ -162,27 +165,20 @@ forms:valid a {
     opacity: 90%;
 }
 
-@media screen and (min-width: 400px) {
-    #result{
-        position: absolute;
-        top: 60%;
-        left:15%;
-        width:60%;
-        display:inline;
-    }
-    forms:hover,
-    forms:valid{
-    width: 400px;
-    cursor: pointer;
-}
+::-webkit-scrollbar {
+    width: 15px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+  }
+ 
+  ::-webkit-scrollbar-thumb {
+    background: white; 
+    border-radius: 10px;
   }
 
-  @media screen and (min-width:800px){
-    #result{
-        position: absolute;
-        top: 60%;
-        left:30%;
-        width:37%;
-        display:inline;
-    }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #6696dd; 
   }
