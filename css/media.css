@@ -34,7 +34,7 @@ forms:valid{
 
     forms:hover,
     forms:valid{
-    width: 400px;
+    width: 80%;
     cursor: pointer;
     }
     forms{
