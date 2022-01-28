@@ -1,3 +1,20 @@
+@media screen and (min-width:200px){
+  #result{
+    position: absolute;
+    top: 60%;
+    left:0%;
+    width:80%;
+    display:inline;
+}
+.logo{
+  display: none;
+}
+forms{
+  position: absolute;
+  top:30%;
+}
+}
+
 @media screen and (min-width: 400px) {
     #result{
         position: absolute;
@@ -12,10 +29,14 @@
     width: 400px;
     cursor: pointer;
     }
+    forms{
+      position: absolute;
+      top:30%;
+    }
 
   }
 
-  @media screen and (min-width:800px){
+  @media screen and (min-width:500px){
     #result{
         position: absolute;
         top: 60%;
@@ -23,4 +44,12 @@
         width:37%;
         display:inline;
     }
+    .logo{
+      display: block;
+    }
+    forms{
+      position: absolute;
+      top:55%;
+    }
   }
+    
